@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Cascadia Code", sans-serif;
+    font-optical-sizing: auto;  
+    font-style: normal;
+}
+
+body {
+    background-color: #181818;
+    color: #f1f1f1;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2% 3%;
+    font-size: 17px;
+}
+
+#logo {
+    margin-right: auto;
+    text-decoration: none;
+    font-size: 40px;
+    color: #f1f1f1;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.links li {
+    margin-right: 20px;
+    list-style: none;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    font-size: 17px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 750px;
+    padding: 11% 8%;
+}
+.container h2 {
+    font-size: 90px;
+    margin-bottom: 15px;
+}
+
+.container p {
+    line-height: 2.7vh;
+    margin-bottom: 15px;
+}
+
+.services {
+    padding: 8%;
+}
+
+.services h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.services p {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.services-page {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.services-card {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 16px;
+    padding: 24px;
+    width: 250px;
+    min-height: 280px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services-card h3 {
+    font-size: 28px;
+}
+
+.services-card p {
+    line-height: 2.2vh;
+    font-size: 14px;
+}
+
+.services-card:hover {
+    transition: all 0.3s ease;
+    background-color: #333; 
+}
+
+.icon img{
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    padding: 2%;
+}
+
+.icon {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+footer {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+}
+
+footer ul {
+    display: flex;
+    margin: auto;
+    grid-gap: 44px;
+    justify-content: center;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+@media (max-width: 760px){
+    .services-page {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .services-card {
+        width: 70%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .links {
+        flex-direction: row;
+        gap: 8px;
+    }
+
+}
